@@ -9,7 +9,6 @@ package duke.choice;
  *
  * @author opc
  */
-
 public class Customer {
 
     public Customer(String name, int measurement) {
@@ -82,5 +81,7 @@ public class Customer {
                 break;
         }
     }
+
+        
 
 }
