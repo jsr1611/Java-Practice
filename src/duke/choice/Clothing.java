@@ -14,8 +14,8 @@ public class Clothing {
     private String size = "M";
     private double price;
     
-    private final double MIN_PRICE = 10.0;
-    private final double MIN_TAX = .2;
+    public static final double MIN_PRICE = 10.0;
+    public static final double MIN_TAX = .2;
 
     public Clothing(String description, double price, String size) {
         this.description = description;
