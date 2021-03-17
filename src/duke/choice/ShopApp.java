@@ -6,8 +6,7 @@
 package duke.choice;
 
 /**
- *
- * @author opc
+ * @author Jumanazar Saidov
  */
 public class ShopApp {
 
@@ -25,7 +24,7 @@ public class ShopApp {
         c1.setName("Pinky");
         c1.setSize("S");
 
-        System.out.println("Customer is " + c1.getName());
+        
 
         Clothing item1 = new Clothing();
         Clothing item2 = new Clothing();
@@ -52,11 +51,17 @@ public class ShopApp {
 
 //        System.out.println(item1.description + ", " + item1.price + ", " + item1.size);
 //        System.out.println(item2.description + ", " + item2.price + ", " + item2.size);
+        int measurement = 3;
+        
+        c1.setSize(measurement);
+
+        System.out.println("Customer is " + c1.getName() + ", " + c1.getSize());
+        
         for (Clothing item : items) {
             if (total > 15) {
                 break;
             }
-            if (c1.getSize() == item.getSize()) {
+            if (c1.getSize().equals(item.getSize())) {
                 System.out.println("Item: " + item.getDescription() + ", " + item.getPrice() + ", " + item.getSize());
                 total += item.getPrice() * (1 + tax);
             }
@@ -64,28 +69,7 @@ public class ShopApp {
         // total = (item2.price * 2 + item1.price) * (1 + tax);
         System.out.println("Total: " + total);
 
-        int measurement = 3;
-
-        switch (measurement) {
-            case 1:
-            case 2:
-            case 3:
-                c1.setSize("S");
-                break;
-            case 4:
-            case 5:
-            case 6:
-                c1.setSize("M");
-                break;
-            case 7:
-            case 8:
-            case 9:
-                c1.setSize("L");
-                break;
-            default:
-                c1.setSize("X");
-                break;
-        }
+        
 
     }
 
