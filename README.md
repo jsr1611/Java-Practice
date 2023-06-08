@@ -1,2 +1,4 @@
-# Java-Practice
-Java Programming Practice solutions
+# Java Self-study Guide
+
+
+
